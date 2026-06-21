@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A heartfelt Father's Day tribute — Happy Father's Day, Daddy." />
+  <title>Happy Father's Day, Daddy</title>
+
+  <!-- EDIT: Fonts — swap if you prefer different typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Noto+Sans+Telugu:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Ambient light canvas -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient-glow ambient-glow--one" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--two" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+       EDIT: title, subtitle, button text, hero image path
+       ═══════════════════════════════════════════ -->
+  <header class="hero" id="top">
+    <div class="hero__bg">
+      <img
+        src="images/memory-1.jpg"
+        alt=""
+        class="hero__bg-image"
+        loading="eager"
+      />
+      <div class="hero__bg-overlay"></div>
+    </div>
+
+    <nav class="hero__nav">
+      <span class="hero__nav-label">A gift from the heart</span>
+      <span class="hero__nav-date">Father's Day 2026</span>
+    </nav>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">మీ కోసం · For you, Daddy</p>
+      <h1 class="hero__title reveal">
+        Happy Father's Day,<br />
+        <em>Daddy</em>
+      </h1>
+      <p class="hero__subtitle reveal telugu">
+        <!-- EDIT: Hero subtitle -->
+        To Daddy, who has always carried love with quiet strength.
+        <span class="hero__subtitle-telugu">ప్రేమను శక్తితో మోసే Daddy కి.</span>
+      </p>
+      <a href="#letter" class="hero__cta reveal">
+        <span>Read My Heart</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         PERSONAL LETTER SECTION
+         EDIT: All letter text below
+         ═══════════════════════════════════════════ -->
+    <section class="letter" id="letter">
+      <div class="container">
+        <div class="section-label reveal">
+          <span class="section-label__line"></span>
+          <span>My Letter</span>
+          <span class="section-label__line"></span>
+        </div>
+
+        <div class="letter__card reveal">
+          <div class="letter__seal" aria-hidden="true">♡</div>
+
+          <p class="letter__greeting telugu">
+            Dear Daddy,
+            <span class="letter__greeting-telugu">ప్రియమైన Daddy,</span>
+          </p>
+
+          <div class="letter__body">
+            <p>
+              I don't always know the right words, but I know what I feel. You have been
+              strength, warmth, and quiet love in our family — not just in the big moments,
+              but in the small ones too. A phone call, a smile, showing up when it mattered.
+              I see all of it, and I am grateful for all of it.
+            </p>
+            <p class="telugu-block">
+              నాకు ఎప్పుడూ perfect words raavu, kani naa feeling clear ga undi.
+              Meeru maa family ki strength, warmth, and silent love.
+              Pedda moments lo kuda, chinna chinna moments lo kuda.
+              Nenu anni notice chestha, and I am truly grateful.
+            </p>
+
+            <p>
+              On this Father's Day, I want you to know — you are not alone.
+              I am here. You can lean on me, talk to me, and count on me.
+              Our family is one, and I will always show up for you,
+              the way you have always shown up for us.
+            </p>
+            <p class="telugu-block">
+              Ee Father's Day roju, meeku oka thing cheppalani undi —
+              meeru okkare kadhu. Nenu ikkade unna.
+              Meeru naa meeda depend avvochu, naatho matladochu.
+              Mana family okkate, and nenu eppudu mee kosam unta,
+              meeru maa kosam ela unnaaro alage.
+            </p>
+
+            <p>
+              You deserve peace, love, and happiness — today and every day.
+              The love you have given still lives in all of us.
+              And I will keep carrying it forward, with you, always beside you.
+            </p>
+            <p class="telugu-block">
+              Meeru peace, love, and happiness deserve chestharu —
+              ee roju kuda, prathi roju kuda.
+              Meeru ichina prema inka mana andarilo undi.
+              And nenu adi munduku teeskeltha, mee side lo, eppudu kuda.
+            </p>
+
+            <p class="letter__closing">
+              Happy Father's Day, Daddy.
+              <span class="telugu">Happy Father's Day, Daddy.</span>
+            </p>
+          </div>
+
+          <!-- EDIT: Your signature -->
+          <p class="letter__signature">
+            With all my love,<br />
+            <strong>Sanjay</strong>
+            <span class="letter__signature-telugu">అన్ని prema tho, Sanjay</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         MEMORY GALLERY
+         EDIT: image paths in src="" and captions in figcaption
+         ═══════════════════════════════════════════ -->
+    <section class="gallery" id="memories">
+      <div class="container">
+        <div class="gallery__header reveal">
+          <p class="section-eyebrow">Our Memories</p>
+          <h2 class="section-title">
+            Moments that stay<br />
+            <em>in the heart</em>
+          </h2>
+          <p class="section-desc telugu">
+            Every photograph holds a piece of love.
+            <span>Prathi photo lo oka piece of love undi.</span>
+          </p>
+        </div>
+
+        <div class="gallery__grid">
+          <!-- EDIT: memory-1 -->
+          <figure class="gallery__item gallery__item--tall reveal">
+            <div class="gallery__frame">
+              <img src="images/memory-1.jpg" alt="A cherished family moment" loading="lazy" />
+              <div class="gallery__shine"></div>
+            </div>
+            <figcaption>A love that never fades</figcaption>
+          </figure>
+
+          <!-- EDIT: memory-2 -->
+          <figure class="gallery__item reveal">
+            <div class="gallery__frame">
+              <img src="images/memory-2.jpg" alt="A warm embrace" loading="lazy" />
+              <div class="gallery__shine"></div>
+            </div>
+            <figcaption>Warmth in every embrace</figcaption>
+          </figure>
+
+          <!-- EDIT: memory-3 -->
+          <figure class="gallery__item reveal">
+            <div class="gallery__frame">
+              <img src="images/memory-3.jpg" alt="Together with grace" loading="lazy" />
+              <div class="gallery__shine"></div>
+            </div>
+            <figcaption>Together with grace</figcaption>
+          </figure>
+
+          <!-- EDIT: memory-4 -->
+          <figure class="gallery__item gallery__item--wide reveal">
+            <div class="gallery__frame">
+              <img src="images/memory-4.jpeg" alt="A beautiful family memory" loading="lazy" />
+              <div class="gallery__shine"></div>
+            </div>
+            <figcaption>Beautiful days together</figcaption>
+          </figure>
+
+          <!-- EDIT: memory-5 -->
+          <figure class="gallery__item reveal">
+            <div class="gallery__frame">
+              <img src="images/memory-5.jpeg" alt="Family together" loading="lazy" />
+              <div class="gallery__shine"></div>
+            </div>
+            <figcaption>Family, always</figcaption>
+          </figure>
+
+          <!-- EDIT: memory-6 -->
+          <figure class="gallery__item reveal">
+            <div class="gallery__frame">
+              <img src="images/memory-6.jpeg" alt="Home and heart" loading="lazy" />
+              <div class="gallery__shine"></div>
+            </div>
+            <figcaption>Home is where you are</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROMISE SECTION
+         EDIT: promise card text below
+         ═══════════════════════════════════════════ -->
+    <section class="promises" id="promises">
+      <div class="container">
+        <div class="promises__header reveal">
+          <p class="section-eyebrow">My Promise</p>
+          <h2 class="section-title">
+            Always,<br />
+            <em>for you</em>
+          </h2>
+        </div>
+
+        <div class="promises__grid">
+          <article class="promise-card reveal">
+            <div class="promise-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>I will always stand by you.</h3>
+            <p class="telugu">Nenu eppudu mee side lo unta.</p>
+          </article>
+
+          <article class="promise-card reveal">
+            <div class="promise-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>You can count on me.</h3>
+            <p class="telugu">Meeru naa meeda depend avvochu.</p>
+          </article>
+
+          <article class="promise-card reveal">
+            <div class="promise-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m4-4a4 4 0 11-8 0 4 4 0 018 0zm6 4a4 4 0 10-8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Your family is my family.</h3>
+            <p class="telugu">Mee family ae naa family.</p>
+          </article>
+
+          <article class="promise-card reveal">
+            <div class="promise-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>I will keep showing up, always.</h3>
+            <p class="telugu">Nenu eppudu show avtha, always.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CLOSING SECTION
+         EDIT: closing lines and signature
+         ═══════════════════════════════════════════ -->
+    <section class="closing" id="closing">
+      <div class="closing__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="closing__content reveal">
+          <p class="closing__eyebrow">Forever</p>
+          <h2 class="closing__title">
+            You are loved more<br />
+            than words can say.
+          </h2>
+          <p class="closing__telugu telugu">
+            Meeru words kanna ekkuva preminchabaduthunnaru.
+          </p>
+
+          <div class="closing__divider" aria-hidden="true">
+            <span>♡</span>
+          </div>
+
+          <p class="closing__wish">
+            Happy Father's Day,<br />
+            <em>Daddy.</em>
+          </p>
+
+          <!-- EDIT: Final signature -->
+          <p class="closing__signature">
+            — Sanjay
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Made with love · Father's Day 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
