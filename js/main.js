@@ -28,9 +28,11 @@
 
   /* ─── Hero reveals on load ─── */
   window.addEventListener("load", () => {
-    document.querySelectorAll(".hero .reveal").forEach((el, i) => {
-      setTimeout(() => el.classList.add("visible"), 200 + i * 150);
+    document.querySelectorAll(".hero__panel, .hero__panel .reveal, .hero .reveal").forEach((el, i) => {
+      setTimeout(() => el.classList.add("visible"), 200 + i * 120);
     });
+    const panel = document.querySelector(".hero__panel");
+    if (panel) panel.classList.add("visible");
   });
 
   /* ─── Soft floating particles ─── */
